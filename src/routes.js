@@ -8,6 +8,6 @@ import List from './pages/List';
 export default (
     <Route path="/" component={App}>
         <IndexRoute component={Home} />
-        <Route path="/list/:id" component={List} />
+        <Route path="list/:type" component={List} />
     </Route>
     );
