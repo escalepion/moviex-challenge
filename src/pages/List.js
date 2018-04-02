@@ -15,9 +15,9 @@ class List extends Component {
     }
     renderList(){
         if(this.props.params.type === 'movie') {
-            this.setState({ list: this.props.movieList });
+            this.setState({ list: this.props.movieList.slice(0,21) });
         }else if(this.props.params.type === 'series') {
-            this.setState({ list: this.props.serieList });
+            this.setState({ list: this.props.serieList.slice(0,21) });
         }
     }
     mapList() {
