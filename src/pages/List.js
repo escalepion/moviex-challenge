@@ -7,17 +7,23 @@ class List extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            list: []
+            list: [],
+            errorMessage: undefined
         };
     }
     componentWillMount() {
-        this.renderList();
+        this.setState({ errorMessage: 'Loading...' });
+        setTimeout(() => {
+            this.renderList();
+        }, 2000);
     }
     renderList(){
         if(this.props.params.type === 'movie') {
-            this.setState({ list: this.props.movieList.slice(0,21) });
+            this.setState({ list: this.props.movieList.slice(0,21), errorMessage: undefined });
         }else if(this.props.params.type === 'series') {
-            this.setState({ list: this.props.serieList.slice(0,21) });
+            this.setState({ list: this.props.serieList.slice(0,21), errorMessage: undefined });
+        }else {
+            this.setState({ errorMessage: 'Oops, something went wrong...' });
         }
     }
     mapList() {
@@ -27,6 +33,14 @@ class List extends Component {
         });
     } 
     render () {
+        console.log(this.state.errorMessage);
+        if(this.state.errorMessage) {
+            return(
+                <div className="row">
+                    <div className="col">{this.state.errorMessage}</div>
+                </div>
+            );
+        }
         return (
             <div className="row">
              {this.mapList()}
