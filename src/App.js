@@ -3,15 +3,18 @@ import React, { Component } from 'react';
 import './scss/main.css';
 
 import Header from './layouts/Header';
+import Title from './layouts/Title';
+import Content from './layouts/Content';
 
 class App extends Component {
   render() {
     return (
       <div className="container-fluid">
         <Header />
-        <div>
-          {this.props.children}
-        </div>
+        <Title />
+        <Content>
+          Content
+        </Content>
       </div>
     );
   }
