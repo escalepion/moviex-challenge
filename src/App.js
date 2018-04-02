@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import * as actions from './actions/movies';
 
 import './scss/main.css';
 
@@ -8,6 +10,9 @@ import Content from './layouts/Content';
 import Footer from './layouts/Footer';
 
 class App extends Component {
+  componentWillMount() {
+    this.props.fetchMovies();
+  }
   render() {
     return (
       <div className="container-fluid">
@@ -22,4 +27,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(null, actions)(App);
