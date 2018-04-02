@@ -33,7 +33,6 @@ class List extends Component {
         });
     } 
     render () {
-        console.log(this.state.errorMessage);
         if(this.state.errorMessage) {
             return(
                 <div className="row">
