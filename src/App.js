@@ -19,7 +19,7 @@ class App extends Component {
         <Header />
         <Title />
         <Content>
-          Content
+          {this.props.children}
         </Content>
         <Footer />
       </div>
