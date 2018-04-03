@@ -8,4 +8,7 @@ body {
 }
 a{
     color: white;
+    &:focus, &:active {
+        outline: none;
+    }
 }

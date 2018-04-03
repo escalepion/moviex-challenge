@@ -12,8 +12,8 @@ const Header = () => {
                         <h1 className="header__title">DEMO Streaming</h1>
                     </div>
                     <div className="col-md-6 d-flex align-items-center justify-content-end">
-                        <WhiteLink>Giriş</WhiteLink>
-                        <DarkLink>Start Your Free Trial</DarkLink>
+                        <WhiteLink linkTo="/">Giriş</WhiteLink>
+                        <DarkLink linkTo="/">Start Your Free Trial</DarkLink>
                     </div>
                 </div>
             </div>
