@@ -1,6 +1,6 @@
-##DEMO Stream
+## DEMO Stream
 
-######Instructions
+###### Instructions
 1. Clone this repo to your local
     `git clole git@github.com:escalepion/moviex-challenge.git your_directory_name`
 
