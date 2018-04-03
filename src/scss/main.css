@@ -37,3 +37,28 @@ a {
 .content {
   min-height: 50rem;
   padding-top: 2rem; }
+
+.footer {
+  background-color: #414141;
+  color: white;
+  padding: 2.5rem 0; }
+
+.footer__reserved {
+  color: #d9d9d9;
+  font-size: 1.2rem;
+  margin-top: 1rem; }
+
+.footer__social {
+  margin-top: 1rem; }
+
+.footer__social__icons {
+  margin-top: 1rem; }
+  .footer__social__icons img {
+    margin-right: 2rem;
+    width: 1.5rem; }
+
+.footer__store__icons {
+  margin-top: 1rem; }
+  .footer__store__icons img {
+    margin-right: 1rem;
+    width: 140px; }

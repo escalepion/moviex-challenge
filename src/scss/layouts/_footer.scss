@@ -1,0 +1,27 @@
+.footer{
+    background-color: $dark-bg-color;
+    color: white;
+    padding: 2.5rem 0;
+}
+.footer__reserved{
+    color: $smoke-white;
+    font-size: $small-font-size;
+    margin-top: 1rem;
+}
+.footer__social{
+    margin-top: 1rem;
+}
+.footer__social__icons{
+    margin-top: 1rem;
+    img{
+        margin-right: 2rem;
+        width: 1.5rem;
+    }
+}
+.footer__store__icons{
+    margin-top: 1rem;
+    img{
+        margin-right: 1rem;
+        width: 140px;
+    }
+}
