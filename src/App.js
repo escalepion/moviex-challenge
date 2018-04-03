@@ -6,7 +6,7 @@ import './scss/main.css';
 
 import Header from './layouts/Header';
 import Title from './layouts/Title';
-import Content from './layouts/Content';
+import ContentContainer from './layouts/ContentContainer';
 import Footer from './layouts/Footer';
 
 class App extends Component {
@@ -17,10 +17,9 @@ class App extends Component {
     return (
       <div className="container-fluid">
         <Header />
-        <Title />
-        <Content>
+        <ContentContainer>
           {this.props.children}
-        </Content>
+        </ContentContainer>
         <Footer />
       </div>
     );
