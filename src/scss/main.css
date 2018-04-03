@@ -20,8 +20,14 @@ a {
   margin-right: 1rem; }
 
 .dark_link {
-  background-color: #404040;
+  background-color: #414141;
   padding: .5rem; }
 
 .dark_link:hover, .white_link:hover {
   color: inherit; }
+
+.title {
+  background-color: #414141;
+  color: white;
+  font-weight: 600;
+  padding: 1.5rem 0; }
