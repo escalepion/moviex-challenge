@@ -6,3 +6,12 @@
 .header__title{
     font-weight: bold;
 }
+.header__links{
+    justify-content: flex-end;
+}
+@media (max-width: 768px) {
+    .header__links{
+        justify-content: flex-start;
+        margin-top: 1.5rem;
+    }
+}
