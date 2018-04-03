@@ -31,7 +31,7 @@ class List extends Component {
     mapList() {
         const key = 'Poster Art';
         return this.state.list.map((item, index) => {
-            return <div key={index} className="col-md-2"><Card imgUrl={item.images[key].url} title={item.title} /></div>
+            return <div key={index} className="col-md-1"><Card imgUrl={item.images[key].url} title={item.title} /></div>
         });
     }
     render() {
@@ -60,7 +60,7 @@ class List extends Component {
             <div>
                 <Title content={titleContent} />
                 <Content>
-                    <div className="row">
+                    <div className="row seven-cols">
                         {this.mapList()}
                     </div>
                 </Content>
