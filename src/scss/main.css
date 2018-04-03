@@ -91,3 +91,10 @@ a {
   .seven-cols .col-lg-1 {
     max-width: 14.285714285714285714285714285714% !important;
     flex: none !important; } }
+
+.card__image img {
+  max-width: 100%; }
+
+.card__title {
+  font-size: 1.2rem;
+  margin-top: .5rem; }

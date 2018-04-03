@@ -1,0 +1,9 @@
+.card__image{
+    img{
+        max-width: 100%; 
+    }
+}
+.card__title{
+    font-size: $small-font-size;
+    margin-top: .5rem;
+}
