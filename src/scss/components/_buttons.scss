@@ -1,0 +1,12 @@
+.white_link{
+    margin-right: 1rem;
+}
+.dark_link{
+    background-color: $dark-button-color;
+    padding: .5rem;
+}
+.dark_link, .white_link {
+    &:hover{
+        color: inherit;
+    }
+}

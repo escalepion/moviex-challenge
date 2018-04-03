@@ -8,10 +8,10 @@ const Header = () => {
         <div className="row header">
             <div className="col-md-10 mx-auto">
                 <div className="row">
-                    <div className="col-md-6 header__title">
-                        <h1>DEMO Streaming</h1>
-                    </div>
                     <div className="col-md-6">
+                        <h1 className="header__title">DEMO Streaming</h1>
+                    </div>
+                    <div className="col-md-6 d-flex align-items-center justify-content-end">
                         <WhiteLink>Giriş</WhiteLink>
                         <DarkLink>Start Your Free Trial</DarkLink>
                     </div>

@@ -5,6 +5,23 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.4rem; }
 
+a {
+  color: white; }
+
 .header {
-  padding: 2rem 0;
-  background-color: #007DFE; }
+  background-color: #007DFE;
+  color: white;
+  padding: 2rem 0; }
+
+.header__title {
+  font-weight: bold; }
+
+.white_link {
+  margin-right: 1rem; }
+
+.dark_link {
+  background-color: #404040;
+  padding: .5rem; }
+
+.dark_link:hover, .white_link:hover {
+  color: inherit; }
