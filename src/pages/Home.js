@@ -13,10 +13,10 @@ const Home = () => {
             <Title content="Popular Titles" />
             <Content>
                 <div className="row">
-                    <div className="col-md-2">
+                    <div className="col-6 col-md-2">
                         <Card title="Popular Series" linkTo="/list/series" imgUrl={seriesThumb} />
                     </div>
-                    <div className="col-md-2">
+                    <div className="col-6 col-md-2">
                         <Card title="Popular Movies" linkTo="/list/movie" imgUrl={moviesThumb} />
                     </div>
                 </div>
